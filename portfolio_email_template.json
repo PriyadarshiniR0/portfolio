@@ -1,0 +1,7 @@
+{
+  "name": "Portfolio Contact Form",
+  "subject": "New message from {{name}} via Portfolio",
+  "message": "Hello Priyadarshini,\n\nYou have a new message from your portfolio website:\n\nName: {{name}}\nEmail: {{email}}\nSubject: {{subject}}\n\nMessage:\n{{message}}\n\n---\nThis email was sent via EmailJS.",
+  "to_email": "priyadarshiniraju2002@gmail.com",
+  "reply_to": "{{email}}"
+}
