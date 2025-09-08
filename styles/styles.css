@@ -1428,3 +1428,44 @@ main > section.active, header.container.active {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+/* Mobile button stacking */
+@media (max-width: 768px) {
+  .btn-con {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    gap: 12px; /* spacing between buttons */
+  }
+
+  .btn-con .btn {
+    width: 80%;   /* make them equal width */
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  gap: 20px;                 /* equal spacing between icons */
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;        /* perfect circle */
+  background: var(--color-secondary); /* green background */
+  color: #fff;               /* white icons */
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-icons a:hover {
+  background: #fff;          /* invert on hover */
+  color: var(--color-secondary);
+  transform: scale(1.1);     /* subtle zoom effect */
+}
