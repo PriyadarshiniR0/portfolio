@@ -1470,28 +1470,21 @@ main > section.active, header.container.active {
   transform: scale(1.1);     /* subtle zoom effect */
 }
 /* Fix project cards on mobile */
+/* Reduce project image size further on mobile */
 @media screen and (max-width: 768px) {
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr;  /* Single column */
-    gap: 20px;
-    padding: 0 15px;             /* side spacing */
+  .project-card img {
+    width: 100%;
+    max-width: 240px;  /* smaller thumbnail size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* optional: adds depth */
   }
 
   .project-card {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  /* Remove timeline line / side border on mobile */
-  .timeline::before {
-    display: none;
-  }
-
-  .timeline {
-    padding-left: 0;
-    margin-left: 0;
+    text-align: center;
+    padding: 10px 0;
   }
 }
 
