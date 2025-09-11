@@ -1469,41 +1469,30 @@ main > section.active, header.container.active {
   color: var(--color-secondary);
   transform: scale(1.1);     /* subtle zoom effect */
 }
-/* ================= PROJECTS ================= */
-#portfolio {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-/* Force mobile layout */
+/* Fix project cards on mobile */
 @media screen and (max-width: 768px) {
   .project-grid {
-    display: flex;              /* instead of grid */
-    flex-direction: column;     /* stack vertically */
-    align-items: center;        /* center horizontally */
+    display: grid;
+    grid-template-columns: 1fr;  /* Single column */
     gap: 20px;
+    padding: 0 15px;             /* side spacing */
   }
 
   .project-card {
-    width: 90%;                 /* leave margin space */
-    max-width: 340px;           /* prevent full stretch */
-    margin: 0 auto;             /* center the card */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
-  .project-card img {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-    display: block;
+  /* Remove timeline line / side border on mobile */
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline {
+    padding-left: 0;
+    margin-left: 0;
   }
 }
+
 
