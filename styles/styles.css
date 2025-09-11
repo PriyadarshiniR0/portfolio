@@ -1469,22 +1469,20 @@ main > section.active, header.container.active {
   color: var(--color-secondary);
   transform: scale(1.1);     /* subtle zoom effect */
 }
-/* Fix project cards on mobile */
-/* Reduce project image size further on mobile */
+/* Force smaller project images on mobile */
 @media screen and (max-width: 768px) {
   .project-card img {
-    width: 100%;
-    max-width: 240px;  /* smaller thumbnail size */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 220px !important;  /* force smaller image */
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* optional: adds depth */
   }
 
   .project-card {
-    text-align: center;
-    padding: 10px 0;
+    text-align: center !important;
+    padding: 10px 0 !important;
   }
 }
 
