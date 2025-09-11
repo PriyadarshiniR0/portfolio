@@ -79,24 +79,17 @@
             </div>
     <div class="about-container">
     <!-- Left Side (Real-Time Projects instead of only image) -->
-    <div class="about-left">
-      <div class="projects-card">
-        <h3 class="projects-heading">Real-Time Projects</h3>
-        <ul class="projects-list">
-          <li>
-            <a href="https://github.com/PriyadarshiniR0/Weather-api" target="_blank">
-              🌦️ Weather API App
-            </a>
-          </li>
-             <li><a href="https://weather-demo.onrender.com" target="_blank" class="btn live">🌦️Live Demo</a></li>
-          <li>
-            <a href="#" target="_blank">
-              🚀 Upcoming Project
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+            <div class="about-left">
+          <div class="projects-card">
+            <h3 class="projects-heading">Highlighted Projects</h3>
+            <ul class="projects-list">
+              <li><a href="https://github.com/PriyadarshiniR0/Weather-api" target="_blank">🌦️ Weather API App</a></li>
+              <li><a href="https://weather-demo.onrender.com" target="_blank" class="btn live">🌍 Live Demo</a></li>
+              <li><a href="https://github.com/PriyadarshiniR0/Hotel_Automation_Project" target="_blank">🏨 Hotel Automation (Selenium)</a></li>
+              <li><a href="#" target="_blank">🚀 Upcoming Project</a></li>
+            </ul>
+          </div>
+        </div>
 
     <!-- Right Side (Content) -->
     <div class="about-right">
@@ -107,6 +100,10 @@
         responsive front-ends, automation testing with Selenium, and SQL optimization.  
         I enjoy turning ideas into reliable, maintainable web apps.
       </p>
+        <p class="about-details">
+            Beyond coding, I’m detail-oriented, curious, and dedicated to 
+            delivering impactful solutions that are scalable, secure, and accessible.
+          </p>
 
     </div>
   </div>
@@ -167,158 +164,145 @@
       </div>
     </div>
   </section>
-        <section class="container" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span></h2>
+               <!-- ✅ Portfolio Section -->
+    <section class="container" id="portfolio">
+    <div class="main-title">
+        <h2>My <span>Portfolio</span></h2>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="django">Django Projects</button>
+        <button class="filter-btn" data-filter="flask">Flask + API</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="automation">Automation & Testing</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="web">Frontend</button>
+    </div>
+
+    <p class="port-text">
+        Here is some of my work that I've done in various programming languages and frameworks.
+    </p>
+
+    <div class="portfolios">
+        <!-- ML + Flask -->
+        <div class="portfolio-item" data-category="ml">
+            <div class="image">
+                <img src="img/project.jpg" alt="">
             </div>
-             <!-- Filter Buttons -->
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="django">Django + ML</button>
-                <button class="filter-btn" data-filter="python">Python Development</button>
-                <button class="filter-btn" data-filter="userauth">User Authentication</button>
-                <button class="filter-btn" data-filter="javascript">JavaScript Project</button>
-                <button class="filter-btn" data-filter="weather">Weather API App</button>
-                <button class="filter-btn" data-filter="hotel">Hotel Automation</button>
+            <div class="hover-items">
+                <h3>Diabetic Prediction App</h3>
+                <p class="project-desc">A Flask web app using ML models for early diabetes detection.</p>
+                <div class="icons">
+                    <a href="https://github.com/PriyadarshiniR0/diabetic-prediction" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                </div>
             </div>
-            <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item"data-category="django">
-                    <div class="image">
-                        <img src="img/project.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Diabetic Prediction App</h3>
-                        <p class="project-desc">A Flask web app using ML models for early diabetes detection.</p>
-       
-                        <div class="icons">
-                            <a href="https://github.com/PriyadarshiniR0/diabetic-prediction" class="icon" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="python">
-                    <div class="image">
-                        <img src="img/project2.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Python Development </h3>
-                        <p class="project-desc">Core Python scripts covering OOP, data handling.</p>
-        
-                        <div class="icons">
-                            <a href="https://github.com/PriyadarshiniR0/python" class="icon" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="python">
-                    <div class="image">
-                        <img src="img/selenium.webp" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Python and Automation Scripts</h3>
-                        <p class="project-desc"> Did project based on Selenium WebDriver,Seelnium grid</p>
-        
-                        <div class="icons">
-                            <a href="https://github.com/PriyadarshiniR0/python-selenium" class="icon" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        </div>
 
-                
-                <div class="portfolio-item" data-category="django">
-                    <div class="image">
-                        <img src="img/project-django-flask.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Class-Based Views in Django</h3>
-                        <p class="project-desc">CRUD operations implemented using Django CBVs.</p>
-       
-                        <div class="icons">
-                            <a href="https://github.com/PriyadarshiniR0/Class-Based-Views-in-Django" class="icon" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-    
-                        </div>
-                    </div>
+        <!-- Core Python -->
+        <div class="portfolio-item" data-category="python">
+            <div class="image">
+                <img src="img/project2.png" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Python Development</h3>
+                <p class="project-desc">Core Python scripts covering OOP, data handling.</p>
+                <div class="icons">
+                    <a href="https://github.com/PriyadarshiniR0/python" target="_blank" class="icon"><i class="fab fa-github"></i></a>
                 </div>
-                 <div class="portfolio-item" data-category="userauth">
-                    <div class="image">
-                        <img src="img/login.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>User Registration & Authentication</h3>
-        <p class="project-desc">Django project with secure user signup, login, and auth flows.</p>
-        
-                        <div class="icons">
-                            <a href="https://github.com/PriyadarshiniR0/User-Registration-Authentication" class="icon" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="javascript">
-                    <div class="image">
-                        <img src="img/javascript.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>JavaScript Project</h3>
-        <p class="project-desc">Interactive front-end features built with JavaScript.</p>
-        
-                        <div class="icons">
-                            <a href="https://github.com/PriyadarshiniR0/JavaScript-" class="icon" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
+            </div>
+        </div>
 
-                        </div>
-                    </div>
+        <!-- Selenium Automation -->
+        <div class="portfolio-item" data-category="automation">
+            <div class="image">
+                <img src="img/selenium.webp" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Python & Automation Scripts</h3>
+                <p class="project-desc">Projects using Selenium WebDriver & Selenium Grid.</p>
+                <div class="icons">
+                    <a href="https://github.com/PriyadarshiniR0/python-selenium" target="_blank" class="icon"><i class="fab fa-github"></i></a>
                 </div>
-                <div class="portfolio-item" data-category="weather">
-                    <div class="image">
-                        <img src="img/weather.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Weather API App</h3>
-        <p class="project-desc">Django-based weather forecast app using external APIs.</p>
-       
-                        <div class="icons">
-                            <a href="https://github.com/PriyadarshiniR0/Weather-api" class="icon" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://weather-demo.onrender.com" target="_blank" class="btn live">Live Demo</a>
+            </div>
+        </div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="hotel">
-                    <div class="image">
-                        <img src="img/hotel-sel.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Hotel Automation Project (Selenium Testing)</h3>
-        <p class="project-desc">Automated hotel booking tests using Selenium WebDriver.</p>
-        
-                        <div class="icons">
-                            <a href="https://github.com/PriyadarshiniR0/Hotel_Automation_Project" class="icon" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-        
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog App -->
+        <!-- Django CBVs -->
         <div class="portfolio-item" data-category="django">
             <div class="image">
-                <img src="img/blog-app.webp" alt="">
+                <img src="img/project-django-flask.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Django Class-Based Views</h3>
+                <p class="project-desc">CRUD operations implemented using Django CBVs.</p>
+                <div class="icons">
+                    <a href="https://github.com/PriyadarshiniR0/Class-Based-Views-in-Django" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Authentication -->
+        <div class="portfolio-item" data-category="django">
+            <div class="image">
+                <img src="img/login.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>User Registration & Authentication</h3>
+                <p class="project-desc">Django project with secure user signup, login, and auth flows.</p>
+                <div class="icons">
+                    <a href="https://github.com/PriyadarshiniR0/User-Registration-Authentication" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="portfolio-item" data-category="javascript">
+            <div class="image">
+                <img src="img/javascript.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>JavaScript Project</h3>
+                <p class="project-desc">Interactive front-end features built with JavaScript.</p>
+                <div class="icons">
+                    <a href="https://github.com/PriyadarshiniR0/JavaScript-" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather API -->
+        <div class="portfolio-item" data-category="flask">
+            <div class="image">
+                <img src="img/weather.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Weather API App</h3>
+                <p class="project-desc">Flask + OpenWeather API integration for real-time weather.</p>
+                <div class="icons">
+                    <a href="https://github.com/PriyadarshiniR0/Weather-api" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="https://weather-demo.onrender.com" target="_blank" class="btn live">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Automation -->
+        <div class="portfolio-item" data-category="automation">
+            <div class="image">
+                <img src="img/hotel-sel.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Hotel Automation Project</h3>
+                <p class="project-desc">Automated hotel booking tests using Selenium WebDriver.</p>
+                <div class="icons">
+                    <a href="https://github.com/PriyadarshiniR0/Hotel_Automation_Project" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog App -->
+        <div class="portfolio-item" data-category="django">
+            <div class="image">
+                <img src="img/blog-app.webp" alt="" loading="lazy">
             </div>
             <div class="hover-items">
                 <h3>Blog Application</h3>
@@ -442,12 +426,9 @@
                 </div>
             </div>
         </div>
-  
-
-                
-               
-            </div>
-        </section>
+    </div>
+</section>
+       
         <section class="container" id="blogs">
             <div class="blogs-content">
                 <div class="main-title">
