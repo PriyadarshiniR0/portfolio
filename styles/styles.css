@@ -1485,5 +1485,8 @@ main > section.active, header.container.active {
     padding: 10px 0 !important;
   }
 }
-
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr 1fr; }
+  .hero { flex-direction: column; text-align: center; }
+}
 
