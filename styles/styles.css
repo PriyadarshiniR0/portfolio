@@ -57,32 +57,45 @@ body.light-mode .orbit .icon {
   color: #e91e63 !important; /* pink */
 }
 /* =======================
-   Light Mode Button Fix
+   Pink Buttons - Light Mode
 ======================= */
 body.light-mode .main-btn {
-  border: 2px solid var(--color-secondary); /* keep green border */
-  background: #f9f9f9; /* light background to separate from white page */
-  color: #000; /* black text for better visibility */
-}
-
-body.light-mode .main-btn:hover {
-  background: var(--color-secondary); /* green hover */
-  color: #fff; /* white text when hovered */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid #ff4f87; /* 🌸 Pink border */
+  color: #ff4f87; /* 🌸 Pink text */
+  background: transparent;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 body.light-mode .main-btn .btn-icon {
-  background: var(--color-accent); /* pink icon stays same */
+  background: #ff4f87; /* Pink circle behind icon */
   color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  transition: all 0.3s ease;
 }
 
+/* Hover and Click Effect */
+body.light-mode .main-btn:hover,
+body.light-mode .main-btn:active {
+  background: #ff4f87; /* Button turns pink */
+  color: #fff; /* Text turns white */
+}
 
-
-body {
-  background-color: var(--color-primary);
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  color: var(--color-white);
-  transition: all 0.4s ease-in-out;
+body.light-mode .main-btn:hover .btn-icon,
+body.light-mode .main-btn:active .btn-icon {
+  background: #fff; /* Icon background turns white */
+  color: #ff4f87; /* Icon turns pink */
 }
 
 a {
@@ -1628,4 +1641,5 @@ main > section.active, header.container.active {
   background: var(--color-secondary);
   color: #fff;
 }
+
 
