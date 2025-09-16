@@ -74,9 +74,10 @@ body.light-mode .main-btn {
   transition: all 0.3s ease;
 }
 
+/* 🌸 Pink icon background and icon color */
 body.light-mode .main-btn .btn-icon {
-  background: #ff4f87; /* Pink circle behind icon */
-  color: #fff;
+  background: #ff4f87;
+  color: #fff; /* White icon for better contrast */
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -85,18 +86,20 @@ body.light-mode .main-btn .btn-icon {
   transition: all 0.3s ease;
 }
 
-/* Hover and Click Effect */
+/* 🔄 Hover / Active Effect */
 body.light-mode .main-btn:hover,
 body.light-mode .main-btn:active {
-  background: #ff4f87; /* Button turns pink */
-  color: #fff; /* Text turns white */
+  background: #ff4f87; /* Fill button pink */
+  color: #fff; /* White text */
 }
 
+/* 🔄 Hover effect for icon */
 body.light-mode .main-btn:hover .btn-icon,
 body.light-mode .main-btn:active .btn-icon {
-  background: #fff; /* Icon background turns white */
-  color: #ff4f87; /* Icon turns pink */
+  background: #fff; /* White background */
+  color: #ff4f87; /* Pink icon */
 }
+
 
 a {
   display: inline-block;
@@ -1641,5 +1644,6 @@ main > section.active, header.container.active {
   background: var(--color-secondary);
   color: #fff;
 }
+
 
 
