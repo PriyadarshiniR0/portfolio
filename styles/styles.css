@@ -59,7 +59,7 @@ body.light-mode .orbit .icon {
 /* =======================
    🌸 Light Mode - Buttons
 ======================= */
-body.light-mode .main-btn {
+body.light-mode .main-btn .btn-icon{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1644,6 +1644,7 @@ main > section.active, header.container.active {
   background: var(--color-secondary);
   color: #fff;
 }
+
 
 
 
