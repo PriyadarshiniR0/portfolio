@@ -57,27 +57,28 @@ body.light-mode .orbit .icon {
   color: #e91e63 !important; /* pink */
 }
 /* =======================
-   Pink Buttons - Light Mode
+   🌸 Light Mode - Buttons
 ======================= */
 body.light-mode .main-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border: 2px solid #ff4f87; /* 🌸 Pink border */
-  color: #ff4f87; /* 🌸 Pink text */
+  border: 2px solid #ff4f87; /* Pink border */
+  color: #ff4f87; /* Pink text */
   background: transparent;
   padding: 0.8rem 2rem;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-/* 🌸 Pink icon background and icon color */
+/* 🔥 Icons are always visible (pink background, white icon) */
 body.light-mode .main-btn .btn-icon {
-  background: #ff4f87;
-  color: #fff; /* White icon for better contrast */
+  background: #ff4f87; /* Pink circle */
+  color: #fff; /* White icon */
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -86,18 +87,17 @@ body.light-mode .main-btn .btn-icon {
   transition: all 0.3s ease;
 }
 
-/* 🔄 Hover / Active Effect */
+/* Hover / Click (Active) Effect */
 body.light-mode .main-btn:hover,
 body.light-mode .main-btn:active {
-  background: #ff4f87; /* Fill button pink */
-  color: #fff; /* White text */
+  background: #ff4f87; /* Button fills pink */
+  color: #fff; /* Text turns white */
 }
 
-/* 🔄 Hover effect for icon */
 body.light-mode .main-btn:hover .btn-icon,
 body.light-mode .main-btn:active .btn-icon {
-  background: #fff; /* White background */
-  color: #ff4f87; /* Pink icon */
+  background: #fff; /* Icon background becomes white */
+  color: #ff4f87; /* Icon turns pink */
 }
 
 
@@ -1644,6 +1644,7 @@ main > section.active, header.container.active {
   background: var(--color-secondary);
   color: #fff;
 }
+
 
 
 
