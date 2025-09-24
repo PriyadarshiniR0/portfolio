@@ -99,7 +99,18 @@ body.light-mode .main-btn:active .btn-icon {
   background: #fff; /* Icon background becomes white */
   color: #ff4f87; /* Icon turns pink */
 }
+body.light-mode .main-btn {
+  border: 2px solid var(--color-secondary); /* pink border */
+  color: var(--color-secondary);            /* pink text */
+  background: transparent;
+  transition: all 0.3s ease;
+}
 
+/* Hover effect: solid pink */
+body.light-mode .main-btn:hover {
+  background: var(--color-secondary);
+  color: #fff; /* text turns white */
+}
 
 a {
   display: inline-block;
@@ -1644,6 +1655,7 @@ main > section.active, header.container.active {
   background: var(--color-secondary);
   color: #fff;
 }
+
 
 
 
